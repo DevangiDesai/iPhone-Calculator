@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		09EC8E0F1DA229AE0059B254 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EC8E0E1DA229AE0059B254 /* main.m */; };
 		09EC8E121DA229AE0059B254 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EC8E111DA229AE0059B254 /* AppDelegate.m */; };
-		09EC8E151DA229AE0059B254 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EC8E141DA229AE0059B254 /* ViewController.m */; };
 		09EC8E181DA229AE0059B254 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09EC8E161DA229AE0059B254 /* Main.storyboard */; };
 		09EC8E1A1DA229AE0059B254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09EC8E191DA229AE0059B254 /* Assets.xcassets */; };
 		09EC8E1D1DA229AE0059B254 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09EC8E1B1DA229AE0059B254 /* LaunchScreen.storyboard */; };
+		09EC8E281DA23A2A0059B254 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EC8E271DA23A2A0059B254 /* ViewController.m */; };
+		09EC8E2B1DA23A640059B254 /* CalcModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EC8E2A1DA23A640059B254 /* CalcModel.m */; };
+		09EC8E2E1DA284400059B254 /* DataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EC8E2D1DA2843F0059B254 /* DataStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +22,16 @@
 		09EC8E0E1DA229AE0059B254 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		09EC8E101DA229AE0059B254 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		09EC8E111DA229AE0059B254 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		09EC8E131DA229AE0059B254 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		09EC8E141DA229AE0059B254 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		09EC8E171DA229AE0059B254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09EC8E191DA229AE0059B254 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09EC8E1C1DA229AE0059B254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09EC8E1E1DA229AE0059B254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09EC8E261DA23A2A0059B254 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Controller/ViewController.h; sourceTree = "<group>"; };
+		09EC8E271DA23A2A0059B254 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Controller/ViewController.m; sourceTree = "<group>"; };
+		09EC8E291DA23A640059B254 /* CalcModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalcModel.h; path = Model/CalcModel.h; sourceTree = "<group>"; };
+		09EC8E2A1DA23A640059B254 /* CalcModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalcModel.m; path = Model/CalcModel.m; sourceTree = "<group>"; };
+		09EC8E2C1DA2843F0059B254 /* DataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataStack.h; path = Model/DataStack.h; sourceTree = "<group>"; };
+		09EC8E2D1DA2843F0059B254 /* DataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataStack.m; path = Model/DataStack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +64,10 @@
 		09EC8E0C1DA229AE0059B254 /* calculator */ = {
 			isa = PBXGroup;
 			children = (
+				09EC8E251DA239FB0059B254 /* Model */,
+				09EC8E241DA239F40059B254 /* Controller */,
 				09EC8E101DA229AE0059B254 /* AppDelegate.h */,
 				09EC8E111DA229AE0059B254 /* AppDelegate.m */,
-				09EC8E131DA229AE0059B254 /* ViewController.h */,
-				09EC8E141DA229AE0059B254 /* ViewController.m */,
 				09EC8E161DA229AE0059B254 /* Main.storyboard */,
 				09EC8E191DA229AE0059B254 /* Assets.xcassets */,
 				09EC8E1B1DA229AE0059B254 /* LaunchScreen.storyboard */,
@@ -77,6 +83,26 @@
 				09EC8E0E1DA229AE0059B254 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09EC8E241DA239F40059B254 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				09EC8E261DA23A2A0059B254 /* ViewController.h */,
+				09EC8E271DA23A2A0059B254 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		09EC8E251DA239FB0059B254 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09EC8E291DA23A640059B254 /* CalcModel.h */,
+				09EC8E2A1DA23A640059B254 /* CalcModel.m */,
+				09EC8E2C1DA2843F0059B254 /* DataStack.h */,
+				09EC8E2D1DA2843F0059B254 /* DataStack.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +136,7 @@
 				TargetAttributes = {
 					09EC8E091DA229AE0059B254 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 92KZN4G4QA;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -150,9 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09EC8E151DA229AE0059B254 /* ViewController.m in Sources */,
 				09EC8E121DA229AE0059B254 /* AppDelegate.m in Sources */,
+				09EC8E281DA23A2A0059B254 /* ViewController.m in Sources */,
+				09EC8E2B1DA23A640059B254 /* CalcModel.m in Sources */,
 				09EC8E0F1DA229AE0059B254 /* main.m in Sources */,
+				09EC8E2E1DA284400059B254 /* DataStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 92KZN4G4QA;
 				INFOPLIST_FILE = calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dddelta.calculator;
@@ -283,6 +313,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 92KZN4G4QA;
 				INFOPLIST_FILE = calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dddelta.calculator;

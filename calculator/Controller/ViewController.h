@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CalcModel.h"
 
 @interface ViewController : UIViewController
 
